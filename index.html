@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSV2JSON</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CSV2JSON</h1>
+
+  <p id="aviso"></p>
+
+  <h2>CSV</h2>
+  <textarea id="csv" rows="10" cols="50"></textarea>
+  <input type="file" id="arquivoCsv" accept=".csv">
+  <button onclick="abrirCsv()">ABRIR CSV</button>
+  <input type="text" id="nomeCsv" placeholder="Nome do arquivo">
+  <button onclick="salvarCsv()">SALVAR CSV</button>
+
+  <h2>JSON</h2>
+  <textarea id="json" rows="10" cols="50"></textarea>
+  <input type="file" id="arquivoJson" accept=".json">
+  <button onclick="abrirJson()">ABRIR JSON</button>
+  <input type="text" id="nomeJson" placeholder="Nome do arquivo">
+  <button onclick="salvarJson()">SALVAR JSON</button>
+
+  <p>
+    <button onclick="converterParaJson()">Converter para JSON</button>
+    <button onclick="converterParaCsv()">Converter para CSV</button>
+    <button onclick="limpar()">Limpar</button>
+  </p>
+
+  <p id="aviso"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
